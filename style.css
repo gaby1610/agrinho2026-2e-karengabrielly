@@ -1,0 +1,9 @@
+/*reset de página*/
+*{
+    margin:0;
+}
+.cabecalho{
+    background-color: blueviolet;
+    display:flex;
+    justify-content: space-between;
+}
