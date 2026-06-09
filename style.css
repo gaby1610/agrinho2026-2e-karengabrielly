@@ -74,3 +74,223 @@ span{
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
+.rodape{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.rodape-titulo{
+        display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.rodape-paragrafo{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.paragrafo-final{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+/* reset de página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Transição suave ao mudar de cor */
+body {
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+.cabecalho {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Corrigido o erro que estava solto aqui */
+    padding: 10px 5%;
+}
+
+.cabecalho-titulo {
+    color: white;
+    padding: 10px;
+}
+
+span {
+    font-weight: bold;
+    color: red;
+}
+
+.cabecalho-itens {
+    display: flex;
+}
+
+.cabecalho-itens-menu {
+    padding: 20px;
+}
+
+/* Estilo do botão de inversão */
+.inversao {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.conteudo-principal {
+    display: block;
+}
+
+.secao-problema {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 5%;
+    min-height: 80vh;
+    gap: 30px;
+}
+
+.problema {
+    flex: 1;
+}
+
+.titulo-problema {
+    font-size: 3rem;
+    color: black;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.paragrafo-problema {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #4b0365;
+}
+
+.botao-problema {
+    display: inline-block;
+    background-color: blueviolet; /* Corrigido para uma cor padrão */
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(129, 3, 214, 0.4);
+    transition: all 0.3s;
+}
+
+.imagem-problema {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Ajustado para aplicar diretamente na tag img */
+.img-problema {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.rodape {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.rodape-titulo, .rodape-paragrafo, .paragrafo-final {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.paragrafo-final {
+    text-align: center;
+    font-size: 1rem;
+    color: grey;
+}
+
+/* ==========================================
+   ESTILOS PARA O MODO ESCURO (DARK MODE)
+============================================ */
+body.dark-mode {
+    background-color: #121212;
+    color: #f00404;
+}
+
+body.dark-mode .titulo-problema {
+    color: #ffffff;
+}
+
+body.dark-mode .paragrafo-problema {
+    color: #ab30e4; /* Tom de roxo mais claro para dar leitura no fundo escuro */
+}
+
+body.dark-mode .cabecalho {
+    background-color: #8010e8; /* Roxo mais escuro para o cabeçalho */
+}
+
+body.dark-mode .inversao {
+    background-color: #f7f0f0ef;
+    color: #000000;
+}
+
+/* ==========================================
+   RESPONSIVIDADE (Telas de até 768px - Celulares e Tablets)
+============================================ */
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .cabecalho-itens {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cabecalho-itens-menu {
+        padding: 5px;
+    }
+
+    .secao-problema {
+        flex-direction: column-reverse; /* Imagem fica em cima ou embaixo conforme preferir */
+        text-align: center;
+        padding: 30px 5%;
+    }
+
+    .titulo-problema {
+        font-size: 2rem; /* Diminui o texto no celular */
+    }
+
+    .img-problema {
+        max-width: 100%;
+    }
+}
